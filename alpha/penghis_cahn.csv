@@ -1,4 +1,4 @@
-"Qty";"Value";"Device";"Package";"Parts";"Description";"PROD_ID";"TP_SIGNAL_NAME";"";
+"Qty";"Value";"Device";"Package";"Parts";"Description";"PROD_ID";"TP_SIGNAL_NAME";
 "2";"";"DIODESOD-123";"SOD-123";"D1, D2";"Diode";"";"";
 "2";"";"I2C_STANDARDI2C_SAO";"2X2";"JP2, JP3";"SparkFun has standardized on a pinout for all I2C based sensor breakouts.";"";"";
 "1";"";"JST_2PIN-SMT-RA";"JST-PH-2-SMT-RA";"CN1";"JST 2-Pin Connectors of various flavors";"";"";

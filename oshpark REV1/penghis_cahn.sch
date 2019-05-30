@@ -1791,6 +1791,32 @@ Matches 4UCONN part # 11026&lt;br&gt;
 <rectangle x1="4.826" y1="2.286" x2="5.334" y2="2.794" layer="51"/>
 <rectangle x1="4.826" y1="-0.254" x2="5.334" y2="0.254" layer="51"/>
 </package>
+<package name="2X3_SMD">
+<circle x="0" y="1.27" radius="0.7" width="0.127" layer="51"/>
+<circle x="-2.54" y="1.27" radius="0.7" width="0.127" layer="51"/>
+<circle x="-2.54" y="-1.27" radius="0.7" width="0.127" layer="51"/>
+<circle x="0" y="-1.27" radius="0.7" width="0.127" layer="51"/>
+<circle x="2.54" y="-1.27" radius="0.7" width="0.127" layer="51"/>
+<circle x="2.54" y="1.27" radius="0.7" width="0.127" layer="51"/>
+<wire x1="-3.81" y1="-2.5" x2="-3.81" y2="2.5" width="0.127" layer="51"/>
+<wire x1="-3.81" y1="2.5" x2="3.81" y2="2.5" width="0.127" layer="51"/>
+<wire x1="3.81" y1="2.5" x2="3.81" y2="-2.5" width="0.127" layer="51"/>
+<wire x1="3.81" y1="-2.5" x2="-3.81" y2="-2.5" width="0.127" layer="51"/>
+<rectangle x1="-0.3" y1="2.55" x2="0.3" y2="3.35" layer="51"/>
+<rectangle x1="-2.84" y1="2.55" x2="-2.24" y2="3.35" layer="51"/>
+<rectangle x1="2.24" y1="2.55" x2="2.84" y2="3.35" layer="51"/>
+<rectangle x1="-2.84" y1="-3.35" x2="-2.24" y2="-2.55" layer="51" rot="R180"/>
+<rectangle x1="-0.3" y1="-3.35" x2="0.3" y2="-2.55" layer="51" rot="R180"/>
+<rectangle x1="2.24" y1="-3.35" x2="2.84" y2="-2.55" layer="51" rot="R180"/>
+<smd name="1" x="-2.54" y="-2.85" dx="1.02" dy="1.9" layer="1"/>
+<smd name="2" x="-2.54" y="2.85" dx="1.02" dy="1.9" layer="1"/>
+<smd name="3" x="0" y="-2.85" dx="1.02" dy="1.9" layer="1"/>
+<smd name="4" x="0" y="2.85" dx="1.02" dy="1.9" layer="1"/>
+<smd name="5" x="2.54" y="-2.85" dx="1.02" dy="1.9" layer="1"/>
+<smd name="6" x="2.54" y="2.85" dx="1.02" dy="1.9" layer="1"/>
+<text x="-3.502" y="0.1" size="0.4064" layer="25">&gt;Name</text>
+<text x="-3.502" y="-0.408" size="0.4064" layer="27">&gt;Value</text>
+</package>
 </packages>
 <symbols>
 <symbol name="MICROB-PLUG">
@@ -2310,6 +2336,19 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <connect gate="G$1" pin="SCL" pad="4"/>
 <connect gate="G$1" pin="SDA" pad="3"/>
 <connect gate="G$1" pin="VCC" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="" package="2X3_SMD">
+<connects>
+<connect gate="G$1" pin="GND" pad="5"/>
+<connect gate="G$1" pin="GPIO1" pad="2"/>
+<connect gate="G$1" pin="GPIO2" pad="1"/>
+<connect gate="G$1" pin="SCL" pad="3"/>
+<connect gate="G$1" pin="SDA" pad="4"/>
+<connect gate="G$1" pin="VCC" pad="6"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -10585,6 +10624,498 @@ Source: http://www.osram.convergy.de/ ... LG_R971.pdf</description>
 <text x="-0.895" y="-0.915" size="0.4064" layer="27">&gt;VALUE</text>
 <wire x1="0.875" y1="0.375" x2="0.875" y2="-0.375" width="0.127" layer="21"/>
 </package>
+<package name="CHIPLED_0603_ALIEN_A_1">
+<description>&lt;b&gt;CHIPLED&lt;/b&gt;&lt;p&gt;
+Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
+<wire x1="-0.3" y1="0.8" x2="0.3" y2="0.8" width="0.1016" layer="51" curve="170.055574"/>
+<wire x1="-0.275" y1="-0.825" x2="0.275" y2="-0.825" width="0.0508" layer="51" curve="-180"/>
+<wire x1="-0.4" y1="0.375" x2="-0.4" y2="-0.35" width="0.1016" layer="51"/>
+<wire x1="0.4" y1="0.35" x2="0.4" y2="-0.35" width="0.1016" layer="51"/>
+<circle x="-0.35" y="0.625" radius="0.075" width="0.0508" layer="51"/>
+<smd name="C" x="0" y="0.75" dx="0.8" dy="0.8" layer="1"/>
+<smd name="A" x="0" y="-0.75" dx="0.8" dy="0.8" layer="1"/>
+<text x="-1.905" y="-1.27" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="3.175" y="-1.27" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<rectangle x1="-0.45" y1="0.7" x2="-0.25" y2="0.85" layer="51"/>
+<rectangle x1="-0.275" y1="0.55" x2="-0.225" y2="0.6" layer="51"/>
+<rectangle x1="-0.45" y1="0.35" x2="-0.4" y2="0.725" layer="51"/>
+<rectangle x1="0.25" y1="0.55" x2="0.45" y2="0.85" layer="51"/>
+<rectangle x1="-0.45" y1="0.35" x2="0.45" y2="0.575" layer="51"/>
+<rectangle x1="-0.45" y1="-0.85" x2="-0.25" y2="-0.35" layer="51"/>
+<rectangle x1="0.25" y1="-0.85" x2="0.45" y2="-0.35" layer="51"/>
+<rectangle x1="-0.275" y1="-0.575" x2="0.275" y2="-0.35" layer="51"/>
+<rectangle x1="-0.275" y1="-0.65" x2="-0.175" y2="-0.55" layer="51"/>
+<rectangle x1="0.175" y1="-0.65" x2="0.275" y2="-0.55" layer="51"/>
+<polygon width="0.127" layer="29">
+<vertex x="-0.4318" y="0.254"/>
+<vertex x="0.4318" y="0.254"/>
+<vertex x="0.4318" y="-0.254"/>
+<vertex x="-0.4318" y="-0.254"/>
+</polygon>
+<rectangle x1="-1.27" y1="-1.2827" x2="-0.9525" y2="-0.9398" layer="30"/>
+<rectangle x1="-0.9525" y1="-0.9525" x2="-0.635" y2="-0.635" layer="30"/>
+<rectangle x1="-0.635" y1="-1.2827" x2="-0.3175" y2="-0.9398" layer="30"/>
+<rectangle x1="0.3175" y1="-1.2827" x2="0.635" y2="-0.9398" layer="30"/>
+<rectangle x1="0.635" y1="-0.9525" x2="0.9525" y2="-0.635" layer="30"/>
+<rectangle x1="0.9525" y1="-1.2827" x2="1.27" y2="-0.9398" layer="30"/>
+<rectangle x1="-0.635" y1="-0.6477" x2="-0.3175" y2="-0.3048" layer="30"/>
+<rectangle x1="0.3175" y1="-0.6477" x2="0.635" y2="-0.3048" layer="30"/>
+<rectangle x1="-1.27" y1="-0.3175" x2="1.27" y2="0" layer="30"/>
+<rectangle x1="-0.3175" y1="-0.9525" x2="0.3175" y2="-0.635" layer="30"/>
+<rectangle x1="-1.27" y1="-0.0127" x2="-0.635" y2="0.3302" layer="30"/>
+<rectangle x1="-0.3175" y1="-0.0127" x2="0.3175" y2="0.3302" layer="30"/>
+<rectangle x1="0.635" y1="-0.0127" x2="1.27" y2="0.3302" layer="30"/>
+<rectangle x1="-0.9525" y1="0.3175" x2="0.9525" y2="0.635" layer="30"/>
+<rectangle x1="-0.635" y1="0.6223" x2="0.635" y2="0.9652" layer="30"/>
+<rectangle x1="-0.3175" y1="0.9525" x2="0.3175" y2="1.27" layer="30"/>
+<rectangle x1="-0.762" y1="0.254" x2="-0.508" y2="0.508" layer="21"/>
+<rectangle x1="-1.27" y1="-0.3175" x2="1.27" y2="0" layer="42"/>
+<rectangle x1="0.635" y1="0" x2="1.27" y2="0.3175" layer="42"/>
+<rectangle x1="-0.3175" y1="0" x2="0.3175" y2="0.3175" layer="42"/>
+<rectangle x1="-1.27" y1="0" x2="-0.635" y2="0.3175" layer="42"/>
+<rectangle x1="-0.9525" y1="0.3175" x2="0.9525" y2="0.635" layer="42"/>
+<rectangle x1="-0.635" y1="0.635" x2="0.635" y2="0.9525" layer="42"/>
+<rectangle x1="-0.3175" y1="0.9525" x2="0.3175" y2="1.27" layer="42"/>
+<rectangle x1="-0.635" y1="-0.635" x2="-0.3175" y2="-0.3175" layer="42"/>
+<rectangle x1="-0.9525" y1="-0.9525" x2="-0.635" y2="-0.635" layer="42"/>
+<rectangle x1="-0.3175" y1="-0.9525" x2="0.3175" y2="-0.635" layer="42"/>
+<rectangle x1="0.3175" y1="-0.635" x2="0.635" y2="-0.3175" layer="42"/>
+<rectangle x1="0.635" y1="-0.9525" x2="0.9525" y2="-0.635" layer="42"/>
+<rectangle x1="0.9525" y1="-1.27" x2="1.27" y2="-0.9525" layer="42"/>
+<rectangle x1="0.3175" y1="-1.27" x2="0.635" y2="-0.9525" layer="42"/>
+<rectangle x1="-0.635" y1="-1.27" x2="-0.3175" y2="-0.9525" layer="42"/>
+<rectangle x1="-1.27" y1="-1.27" x2="-0.9525" y2="-0.9525" layer="42"/>
+</package>
+<package name="CHIPLED_0603_ALIEN_A_2">
+<description>&lt;b&gt;CHIPLED&lt;/b&gt;&lt;p&gt;
+Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
+<wire x1="-0.3" y1="0.8" x2="0.3" y2="0.8" width="0.1016" layer="51" curve="170.055574"/>
+<wire x1="-0.275" y1="-0.825" x2="0.275" y2="-0.825" width="0.0508" layer="51" curve="-180"/>
+<wire x1="-0.4" y1="0.375" x2="-0.4" y2="-0.35" width="0.1016" layer="51"/>
+<wire x1="0.4" y1="0.35" x2="0.4" y2="-0.35" width="0.1016" layer="51"/>
+<circle x="-0.35" y="0.625" radius="0.075" width="0.0508" layer="51"/>
+<smd name="C" x="0" y="0.75" dx="0.8" dy="0.8" layer="1"/>
+<smd name="A" x="0" y="-0.75" dx="0.8" dy="0.8" layer="1"/>
+<text x="-1.905" y="-1.27" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="3.175" y="-1.27" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<rectangle x1="-0.45" y1="0.7" x2="-0.25" y2="0.85" layer="51"/>
+<rectangle x1="-0.275" y1="0.55" x2="-0.225" y2="0.6" layer="51"/>
+<rectangle x1="-0.45" y1="0.35" x2="-0.4" y2="0.725" layer="51"/>
+<rectangle x1="0.25" y1="0.55" x2="0.45" y2="0.85" layer="51"/>
+<rectangle x1="-0.45" y1="0.35" x2="0.45" y2="0.575" layer="51"/>
+<rectangle x1="-0.45" y1="-0.85" x2="-0.25" y2="-0.35" layer="51"/>
+<rectangle x1="0.25" y1="-0.85" x2="0.45" y2="-0.35" layer="51"/>
+<rectangle x1="-0.275" y1="-0.575" x2="0.275" y2="-0.35" layer="51"/>
+<rectangle x1="-0.275" y1="-0.65" x2="-0.175" y2="-0.55" layer="51"/>
+<rectangle x1="0.175" y1="-0.65" x2="0.275" y2="-0.55" layer="51"/>
+<polygon width="0.127" layer="29">
+<vertex x="-0.4318" y="0.254"/>
+<vertex x="0.4318" y="0.254"/>
+<vertex x="0.4318" y="-0.254"/>
+<vertex x="-0.4318" y="-0.254"/>
+</polygon>
+<rectangle x1="-1.27" y1="-0.9525" x2="-0.9525" y2="-0.635" layer="30"/>
+<rectangle x1="-0.9525" y1="-1.27" x2="-0.635" y2="-0.9525" layer="30"/>
+<rectangle x1="0.635" y1="-1.27" x2="0.9525" y2="-0.9525" layer="30"/>
+<rectangle x1="0.9525" y1="-0.9525" x2="1.27" y2="-0.635" layer="30"/>
+<rectangle x1="-0.9525" y1="-0.6477" x2="-0.635" y2="-0.3048" layer="30"/>
+<rectangle x1="0.635" y1="-0.6477" x2="0.9525" y2="-0.3048" layer="30"/>
+<rectangle x1="-1.27" y1="-0.3175" x2="1.27" y2="0" layer="30"/>
+<rectangle x1="-0.3175" y1="-0.6477" x2="0.3175" y2="-0.3048" layer="30"/>
+<rectangle x1="-1.27" y1="-0.0127" x2="-0.635" y2="0.3302" layer="30"/>
+<rectangle x1="-0.3175" y1="-0.0127" x2="0.3175" y2="0.3302" layer="30"/>
+<rectangle x1="0.635" y1="-0.0127" x2="1.27" y2="0.3302" layer="30"/>
+<rectangle x1="-0.9525" y1="0.3175" x2="0.9525" y2="0.635" layer="30"/>
+<rectangle x1="-0.635" y1="0.6223" x2="0.635" y2="0.9652" layer="30"/>
+<rectangle x1="-0.3175" y1="0.9525" x2="0.3175" y2="1.27" layer="30"/>
+<rectangle x1="-0.762" y1="0.254" x2="-0.508" y2="0.508" layer="21"/>
+<rectangle x1="-0.3175" y1="0.9525" x2="0.3175" y2="1.27" layer="42"/>
+<rectangle x1="-0.9525" y1="0.3175" x2="0.9525" y2="0.635" layer="42"/>
+<rectangle x1="-0.635" y1="0.635" x2="0.635" y2="0.9525" layer="42"/>
+<rectangle x1="-0.3175" y1="0" x2="0.3175" y2="0.3175" layer="42"/>
+<rectangle x1="-1.27" y1="0" x2="-0.635" y2="0.3175" layer="42"/>
+<rectangle x1="-1.27" y1="-0.3175" x2="1.27" y2="0" layer="42"/>
+<rectangle x1="0.635" y1="0" x2="1.27" y2="0.3175" layer="42"/>
+<rectangle x1="-0.3175" y1="-0.635" x2="0.3175" y2="-0.3175" layer="42"/>
+<rectangle x1="0.635" y1="-0.635" x2="0.9525" y2="-0.3175" layer="42"/>
+<rectangle x1="-0.9525" y1="-0.635" x2="-0.635" y2="-0.3175" layer="42"/>
+<rectangle x1="-1.27" y1="-0.9525" x2="-0.9525" y2="-0.635" layer="42"/>
+<rectangle x1="-0.9525" y1="-1.27" x2="-0.635" y2="-0.9525" layer="42"/>
+<rectangle x1="0.635" y1="-1.27" x2="0.9525" y2="-0.9525" layer="42"/>
+<rectangle x1="0.9525" y1="-0.9525" x2="1.27" y2="-0.635" layer="42"/>
+</package>
+<package name="CHIPLED_0603_ALIEN_B_2">
+<description>&lt;b&gt;CHIPLED&lt;/b&gt;&lt;p&gt;
+Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
+<wire x1="-0.3" y1="0.8" x2="0.3" y2="0.8" width="0.1016" layer="51" curve="170.055574"/>
+<wire x1="-0.275" y1="-0.825" x2="0.275" y2="-0.825" width="0.0508" layer="51" curve="-180"/>
+<wire x1="-0.4" y1="0.375" x2="-0.4" y2="-0.35" width="0.1016" layer="51"/>
+<wire x1="0.4" y1="0.35" x2="0.4" y2="-0.35" width="0.1016" layer="51"/>
+<circle x="-0.35" y="0.625" radius="0.075" width="0.0508" layer="51"/>
+<smd name="C" x="0" y="0.75" dx="0.8" dy="0.8" layer="1"/>
+<smd name="A" x="0" y="-0.75" dx="0.8" dy="0.8" layer="1"/>
+<text x="-1.905" y="-1.27" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="3.175" y="-1.27" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<rectangle x1="-0.45" y1="0.7" x2="-0.25" y2="0.85" layer="51"/>
+<rectangle x1="-0.275" y1="0.55" x2="-0.225" y2="0.6" layer="51"/>
+<rectangle x1="-0.45" y1="0.35" x2="-0.4" y2="0.725" layer="51"/>
+<rectangle x1="0.25" y1="0.55" x2="0.45" y2="0.85" layer="51"/>
+<rectangle x1="-0.45" y1="0.35" x2="0.45" y2="0.575" layer="51"/>
+<rectangle x1="-0.45" y1="-0.85" x2="-0.25" y2="-0.35" layer="51"/>
+<rectangle x1="0.25" y1="-0.85" x2="0.45" y2="-0.35" layer="51"/>
+<rectangle x1="-0.275" y1="-0.575" x2="0.275" y2="-0.35" layer="51"/>
+<rectangle x1="-0.275" y1="-0.65" x2="-0.175" y2="-0.55" layer="51"/>
+<rectangle x1="0.175" y1="-0.65" x2="0.275" y2="-0.55" layer="51"/>
+<polygon width="0.127" layer="29">
+<vertex x="-0.4318" y="0.254"/>
+<vertex x="0.4318" y="0.254"/>
+<vertex x="0.4318" y="-0.254"/>
+<vertex x="-0.4318" y="-0.254"/>
+</polygon>
+<rectangle x1="-0.762" y1="0.254" x2="-0.508" y2="0.508" layer="21"/>
+<rectangle x1="-1.11125" y1="-0.9652" x2="-0.79375" y2="-0.6223" layer="30"/>
+<rectangle x1="0.79375" y1="-0.9652" x2="1.11125" y2="-0.6223" layer="30"/>
+<rectangle x1="-1.4351" y1="0" x2="-0.79375" y2="0.3175" layer="30"/>
+<rectangle x1="0.79375" y1="0" x2="1.4351" y2="0.3175" layer="30"/>
+<rectangle x1="-1.74625" y1="-0.3302" x2="1.74625" y2="0.0127" layer="30"/>
+<rectangle x1="-0.47625" y1="0" x2="0.47625" y2="0.3175" layer="30"/>
+<rectangle x1="-1.11125" y1="0.3048" x2="1.11125" y2="0.6477" layer="30"/>
+<rectangle x1="-0.79375" y1="0.635" x2="-0.47625" y2="0.9525" layer="30"/>
+<rectangle x1="-1.11125" y1="0.9525" x2="-0.79375" y2="1.27" layer="30"/>
+<rectangle x1="0.47625" y1="0.635" x2="0.79375" y2="0.9525" layer="30"/>
+<rectangle x1="0.79375" y1="0.9525" x2="1.11125" y2="1.27" layer="30"/>
+<rectangle x1="-1.42875" y1="-1.27" x2="-1.11125" y2="-0.9525" layer="30"/>
+<rectangle x1="1.11125" y1="-1.27" x2="1.42875" y2="-0.9525" layer="30"/>
+<rectangle x1="-1.74625" y1="0" x2="-1.42875" y2="0.9525" layer="30"/>
+<rectangle x1="1.42875" y1="0" x2="1.74625" y2="0.9525" layer="30"/>
+<rectangle x1="-1.42875" y1="-0.635" x2="1.42875" y2="-0.3175" layer="30"/>
+<rectangle x1="-1.11125" y1="0.9525" x2="-0.79375" y2="1.27" layer="42"/>
+<rectangle x1="-0.79375" y1="0.635" x2="-0.47625" y2="0.9525" layer="42"/>
+<rectangle x1="0.47625" y1="0.635" x2="0.79375" y2="0.9525" layer="42"/>
+<rectangle x1="0.79375" y1="0.9525" x2="1.11125" y2="1.27" layer="42"/>
+<rectangle x1="-1.11125" y1="0.3175" x2="1.11125" y2="0.635" layer="42"/>
+<rectangle x1="0.79375" y1="0" x2="1.42875" y2="0.3175" layer="42"/>
+<rectangle x1="-0.47625" y1="0" x2="0.47625" y2="0.3175" layer="42"/>
+<rectangle x1="-1.42875" y1="0" x2="-0.79375" y2="0.3175" layer="42"/>
+<rectangle x1="-1.74625" y1="0" x2="-1.42875" y2="0.9525" layer="42"/>
+<rectangle x1="1.42875" y1="0" x2="1.74625" y2="0.9525" layer="42"/>
+<rectangle x1="-1.74625" y1="-0.3175" x2="1.74625" y2="0" layer="42"/>
+<rectangle x1="-1.42875" y1="-0.635" x2="1.42875" y2="-0.3175" layer="42"/>
+<rectangle x1="-1.11125" y1="-0.9525" x2="-0.79375" y2="-0.635" layer="42"/>
+<rectangle x1="-1.42875" y1="-1.27" x2="-1.11125" y2="-0.9525" layer="42"/>
+<rectangle x1="0.79375" y1="-0.9525" x2="1.11125" y2="-0.635" layer="42"/>
+<rectangle x1="1.11125" y1="-1.27" x2="1.42875" y2="-0.9525" layer="42"/>
+</package>
+<package name="CHIPLED_0603_ALIEN_B_1">
+<description>&lt;b&gt;CHIPLED&lt;/b&gt;&lt;p&gt;
+Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
+<wire x1="-0.3" y1="0.8" x2="0.3" y2="0.8" width="0.1016" layer="51" curve="170.055574"/>
+<wire x1="-0.275" y1="-0.825" x2="0.275" y2="-0.825" width="0.0508" layer="51" curve="-180"/>
+<wire x1="-0.4" y1="0.375" x2="-0.4" y2="-0.35" width="0.1016" layer="51"/>
+<wire x1="0.4" y1="0.35" x2="0.4" y2="-0.35" width="0.1016" layer="51"/>
+<circle x="-0.35" y="0.625" radius="0.075" width="0.0508" layer="51"/>
+<smd name="C" x="0" y="0.75" dx="0.8" dy="0.8" layer="1"/>
+<smd name="A" x="0" y="-0.75" dx="0.8" dy="0.8" layer="1"/>
+<text x="-1.905" y="-1.27" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="3.175" y="-1.27" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<rectangle x1="-0.45" y1="0.7" x2="-0.25" y2="0.85" layer="51"/>
+<rectangle x1="-0.275" y1="0.55" x2="-0.225" y2="0.6" layer="51"/>
+<rectangle x1="-0.45" y1="0.35" x2="-0.4" y2="0.725" layer="51"/>
+<rectangle x1="0.25" y1="0.55" x2="0.45" y2="0.85" layer="51"/>
+<rectangle x1="-0.45" y1="0.35" x2="0.45" y2="0.575" layer="51"/>
+<rectangle x1="-0.45" y1="-0.85" x2="-0.25" y2="-0.35" layer="51"/>
+<rectangle x1="0.25" y1="-0.85" x2="0.45" y2="-0.35" layer="51"/>
+<rectangle x1="-0.275" y1="-0.575" x2="0.275" y2="-0.35" layer="51"/>
+<rectangle x1="-0.275" y1="-0.65" x2="-0.175" y2="-0.55" layer="51"/>
+<rectangle x1="0.175" y1="-0.65" x2="0.275" y2="-0.55" layer="51"/>
+<polygon width="0.127" layer="29">
+<vertex x="-0.4318" y="0.254"/>
+<vertex x="0.4318" y="0.254"/>
+<vertex x="0.4318" y="-0.254"/>
+<vertex x="-0.4318" y="-0.254"/>
+</polygon>
+<rectangle x1="-0.762" y1="0.254" x2="-0.508" y2="0.508" layer="21"/>
+<rectangle x1="-0.79375" y1="-1.27" x2="-0.15875" y2="-0.9525" layer="30"/>
+<rectangle x1="0.15875" y1="-1.27" x2="0.79375" y2="-0.9525" layer="30"/>
+<rectangle x1="-1.11125" y1="-0.9652" x2="-0.79375" y2="-0.6223" layer="30"/>
+<rectangle x1="0.79375" y1="-0.9652" x2="1.11125" y2="-0.6223" layer="30"/>
+<rectangle x1="-1.74625" y1="-0.9525" x2="-1.42875" y2="-0.3175" layer="30"/>
+<rectangle x1="1.42875" y1="-0.9525" x2="1.74625" y2="-0.3175" layer="30"/>
+<rectangle x1="-1.42875" y1="0" x2="-0.79375" y2="0.3175" layer="30"/>
+<rectangle x1="0.79375" y1="0" x2="1.42875" y2="0.3175" layer="30"/>
+<rectangle x1="-1.11125" y1="-0.635" x2="1.11125" y2="-0.3175" layer="30"/>
+<rectangle x1="-1.74625" y1="-0.3302" x2="1.74625" y2="0.0127" layer="30"/>
+<rectangle x1="-0.47625" y1="0" x2="0.47625" y2="0.3175" layer="30"/>
+<rectangle x1="-1.11125" y1="0.3048" x2="1.11125" y2="0.6477" layer="30"/>
+<rectangle x1="-0.79375" y1="0.635" x2="-0.47625" y2="0.9525" layer="30"/>
+<rectangle x1="-1.11125" y1="0.9525" x2="-0.79375" y2="1.27" layer="30"/>
+<rectangle x1="0.47625" y1="0.635" x2="0.79375" y2="0.9525" layer="30"/>
+<rectangle x1="0.79375" y1="0.9525" x2="1.11125" y2="1.27" layer="30"/>
+<rectangle x1="-0.79375" y1="-1.27" x2="-0.15875" y2="-0.9525" layer="42"/>
+<rectangle x1="0.15875" y1="-1.27" x2="0.79375" y2="-0.9525" layer="42"/>
+<rectangle x1="0.79375" y1="-0.9525" x2="1.11125" y2="-0.635" layer="42"/>
+<rectangle x1="-1.11125" y1="-0.9525" x2="-0.79375" y2="-0.635" layer="42"/>
+<rectangle x1="-1.74625" y1="-0.9525" x2="-1.42875" y2="-0.3175" layer="42"/>
+<rectangle x1="1.42875" y1="-0.9525" x2="1.74625" y2="-0.3175" layer="42"/>
+<rectangle x1="-1.11125" y1="-0.635" x2="1.11125" y2="-0.3175" layer="42"/>
+<rectangle x1="-1.74625" y1="-0.3175" x2="1.74625" y2="0" layer="42"/>
+<rectangle x1="-1.42875" y1="0" x2="-0.79375" y2="0.3175" layer="42"/>
+<rectangle x1="-1.11125" y1="0.3175" x2="1.11125" y2="0.635" layer="42"/>
+<rectangle x1="0.79375" y1="0" x2="1.42875" y2="0.3175" layer="42"/>
+<rectangle x1="-0.47625" y1="0" x2="0.47625" y2="0.3175" layer="42"/>
+<rectangle x1="0.47625" y1="0.635" x2="0.79375" y2="0.9525" layer="42"/>
+<rectangle x1="0.79375" y1="0.9525" x2="1.11125" y2="1.27" layer="42"/>
+<rectangle x1="-1.11125" y1="0.9525" x2="-0.79375" y2="1.27" layer="42"/>
+<rectangle x1="-0.79375" y1="0.635" x2="-0.47625" y2="0.9525" layer="42"/>
+</package>
+<package name="CHIPLED_0603_ALIEN_C_1">
+<description>&lt;b&gt;CHIPLED&lt;/b&gt;&lt;p&gt;
+Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
+<wire x1="-0.3" y1="0.8" x2="0.3" y2="0.8" width="0.1016" layer="51" curve="170.055574"/>
+<wire x1="-0.275" y1="-0.825" x2="0.275" y2="-0.825" width="0.0508" layer="51" curve="-180"/>
+<wire x1="-0.4" y1="0.375" x2="-0.4" y2="-0.35" width="0.1016" layer="51"/>
+<wire x1="0.4" y1="0.35" x2="0.4" y2="-0.35" width="0.1016" layer="51"/>
+<circle x="-0.35" y="0.625" radius="0.075" width="0.0508" layer="51"/>
+<smd name="C" x="0" y="0.75" dx="0.8" dy="0.8" layer="1"/>
+<smd name="A" x="0" y="-0.75" dx="0.8" dy="0.8" layer="1"/>
+<text x="-1.905" y="-1.27" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="3.175" y="-1.27" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<rectangle x1="-0.45" y1="0.7" x2="-0.25" y2="0.85" layer="51"/>
+<rectangle x1="-0.275" y1="0.55" x2="-0.225" y2="0.6" layer="51"/>
+<rectangle x1="-0.45" y1="0.35" x2="-0.4" y2="0.725" layer="51"/>
+<rectangle x1="0.25" y1="0.55" x2="0.45" y2="0.85" layer="51"/>
+<rectangle x1="-0.45" y1="0.35" x2="0.45" y2="0.575" layer="51"/>
+<rectangle x1="-0.45" y1="-0.85" x2="-0.25" y2="-0.35" layer="51"/>
+<rectangle x1="0.25" y1="-0.85" x2="0.45" y2="-0.35" layer="51"/>
+<rectangle x1="-0.275" y1="-0.575" x2="0.275" y2="-0.35" layer="51"/>
+<rectangle x1="-0.275" y1="-0.65" x2="-0.175" y2="-0.55" layer="51"/>
+<rectangle x1="0.175" y1="-0.65" x2="0.275" y2="-0.55" layer="51"/>
+<polygon width="0.127" layer="29">
+<vertex x="-0.4318" y="0.254"/>
+<vertex x="0.4318" y="0.254"/>
+<vertex x="0.4318" y="-0.254"/>
+<vertex x="-0.4318" y="-0.254"/>
+</polygon>
+<rectangle x1="-0.762" y1="0.254" x2="-0.508" y2="0.508" layer="21"/>
+<rectangle x1="-0.3175" y1="-0.9652" x2="0.3175" y2="-0.6223" layer="30"/>
+<rectangle x1="0.635" y1="-0.9652" x2="1.27" y2="-0.6223" layer="30"/>
+<rectangle x1="1.27" y1="-1.27" x2="1.905" y2="-0.9525" layer="30"/>
+<rectangle x1="-1.27" y1="-0.9652" x2="-0.635" y2="-0.6223" layer="30"/>
+<rectangle x1="-1.905" y1="-1.27" x2="-1.27" y2="-0.9525" layer="30"/>
+<rectangle x1="-0.9525" y1="-0.635" x2="-0.3175" y2="-0.3175" layer="30"/>
+<rectangle x1="0.3175" y1="-0.635" x2="0.9525" y2="-0.3175" layer="30"/>
+<rectangle x1="-1.905" y1="-0.3302" x2="1.905" y2="0.0127" layer="30"/>
+<rectangle x1="0.9525" y1="0" x2="1.905" y2="0.3175" layer="30"/>
+<rectangle x1="-0.3175" y1="0" x2="0.3175" y2="0.3175" layer="30"/>
+<rectangle x1="-1.905" y1="0" x2="-0.9525" y2="0.3175" layer="30"/>
+<rectangle x1="-1.5875" y1="0.3048" x2="1.5875" y2="0.6477" layer="30"/>
+<rectangle x1="-0.635" y1="0.635" x2="0.635" y2="0.9525" layer="30"/>
+<rectangle x1="-0.635" y1="0.635" x2="0.635" y2="0.9525" layer="42"/>
+<rectangle x1="-1.5875" y1="0.3175" x2="1.5875" y2="0.635" layer="42"/>
+<rectangle x1="-0.3175" y1="0" x2="0.3175" y2="0.3175" layer="42"/>
+<rectangle x1="-1.905" y1="0" x2="-0.9525" y2="0.3175" layer="42"/>
+<rectangle x1="0.9525" y1="0" x2="1.905" y2="0.3175" layer="42"/>
+<rectangle x1="-1.905" y1="-0.3175" x2="1.905" y2="0" layer="42"/>
+<rectangle x1="-0.9525" y1="-0.635" x2="-0.3175" y2="-0.3175" layer="42"/>
+<rectangle x1="0.3175" y1="-0.635" x2="0.9525" y2="-0.3175" layer="42"/>
+<rectangle x1="0.635" y1="-0.9525" x2="1.27" y2="-0.635" layer="42"/>
+<rectangle x1="1.27" y1="-1.27" x2="1.905" y2="-0.9525" layer="42"/>
+<rectangle x1="-0.3175" y1="-0.9525" x2="0.3175" y2="-0.635" layer="42"/>
+<rectangle x1="-1.27" y1="-0.9525" x2="-0.635" y2="-0.635" layer="42"/>
+<rectangle x1="-1.905" y1="-1.27" x2="-1.27" y2="-0.9525" layer="42"/>
+</package>
+<package name="CHIPLED_0603_ALIEN_C_2">
+<description>&lt;b&gt;CHIPLED&lt;/b&gt;&lt;p&gt;
+Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
+<wire x1="-0.3" y1="0.8" x2="0.3" y2="0.8" width="0.1016" layer="51" curve="170.055574"/>
+<wire x1="-0.275" y1="-0.825" x2="0.275" y2="-0.825" width="0.0508" layer="51" curve="-180"/>
+<wire x1="-0.4" y1="0.375" x2="-0.4" y2="-0.35" width="0.1016" layer="51"/>
+<wire x1="0.4" y1="0.35" x2="0.4" y2="-0.35" width="0.1016" layer="51"/>
+<circle x="-0.35" y="0.625" radius="0.075" width="0.0508" layer="51"/>
+<smd name="C" x="0" y="0.75" dx="0.8" dy="0.8" layer="1"/>
+<smd name="A" x="0" y="-0.75" dx="0.8" dy="0.8" layer="1"/>
+<text x="-1.905" y="-1.27" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="3.175" y="-1.27" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<rectangle x1="-0.45" y1="0.7" x2="-0.25" y2="0.85" layer="51"/>
+<rectangle x1="-0.275" y1="0.55" x2="-0.225" y2="0.6" layer="51"/>
+<rectangle x1="-0.45" y1="0.35" x2="-0.4" y2="0.725" layer="51"/>
+<rectangle x1="0.25" y1="0.55" x2="0.45" y2="0.85" layer="51"/>
+<rectangle x1="-0.45" y1="0.35" x2="0.45" y2="0.575" layer="51"/>
+<rectangle x1="-0.45" y1="-0.85" x2="-0.25" y2="-0.35" layer="51"/>
+<rectangle x1="0.25" y1="-0.85" x2="0.45" y2="-0.35" layer="51"/>
+<rectangle x1="-0.275" y1="-0.575" x2="0.275" y2="-0.35" layer="51"/>
+<rectangle x1="-0.275" y1="-0.65" x2="-0.175" y2="-0.55" layer="51"/>
+<rectangle x1="0.175" y1="-0.65" x2="0.275" y2="-0.55" layer="51"/>
+<polygon width="0.127" layer="29">
+<vertex x="-0.4318" y="0.254"/>
+<vertex x="0.4318" y="0.254"/>
+<vertex x="0.4318" y="-0.254"/>
+<vertex x="-0.4318" y="-0.254"/>
+</polygon>
+<rectangle x1="-0.762" y1="0.254" x2="-0.508" y2="0.508" layer="21"/>
+<rectangle x1="-0.3175" y1="-0.9525" x2="0.3175" y2="-0.635" layer="30"/>
+<rectangle x1="0.9525" y1="-0.9652" x2="1.5875" y2="-0.6223" layer="30"/>
+<rectangle x1="0.635" y1="-1.27" x2="1.27" y2="-0.9525" layer="30"/>
+<rectangle x1="-1.5875" y1="-0.9652" x2="-0.9525" y2="-0.6223" layer="30"/>
+<rectangle x1="-1.27" y1="-1.27" x2="-0.635" y2="-0.9525" layer="30"/>
+<rectangle x1="-1.905" y1="-0.3302" x2="1.905" y2="0.0127" layer="30"/>
+<rectangle x1="0.9525" y1="0" x2="1.905" y2="0.3175" layer="30"/>
+<rectangle x1="-0.3175" y1="0" x2="0.3175" y2="0.3175" layer="30"/>
+<rectangle x1="-1.905" y1="0" x2="-0.9525" y2="0.3175" layer="30"/>
+<rectangle x1="-1.5875" y1="0.3048" x2="1.5875" y2="0.6477" layer="30"/>
+<rectangle x1="-0.635" y1="0.635" x2="0.635" y2="0.9525" layer="30"/>
+<rectangle x1="-1.27" y1="-0.635" x2="-0.3175" y2="-0.3175" layer="30"/>
+<rectangle x1="0.3175" y1="-0.635" x2="1.27" y2="-0.3175" layer="30"/>
+<rectangle x1="-1.27" y1="-1.27" x2="-0.635" y2="-0.9525" layer="42"/>
+<rectangle x1="-1.5875" y1="-0.9525" x2="-0.9525" y2="-0.635" layer="42"/>
+<rectangle x1="-0.3175" y1="-0.9525" x2="0.3175" y2="-0.635" layer="42"/>
+<rectangle x1="0.9525" y1="-0.9525" x2="1.5875" y2="-0.635" layer="42"/>
+<rectangle x1="0.635" y1="-1.27" x2="1.27" y2="-0.9525" layer="42"/>
+<rectangle x1="0.3175" y1="-0.635" x2="1.27" y2="-0.3175" layer="42"/>
+<rectangle x1="-1.27" y1="-0.635" x2="-0.3175" y2="-0.3175" layer="42"/>
+<rectangle x1="-1.905" y1="-0.3175" x2="1.905" y2="0" layer="42"/>
+<rectangle x1="-1.905" y1="0" x2="-0.9525" y2="0.3175" layer="42"/>
+<rectangle x1="-1.5875" y1="0.3175" x2="1.5875" y2="0.635" layer="42"/>
+<rectangle x1="0.9525" y1="0" x2="1.905" y2="0.3175" layer="42"/>
+<rectangle x1="-0.3175" y1="0" x2="0.3175" y2="0.3175" layer="42"/>
+<rectangle x1="-0.635" y1="0.635" x2="0.635" y2="0.9525" layer="42"/>
+</package>
+<package name="CHIPLED_0603_UFO">
+<description>&lt;b&gt;CHIPLED&lt;/b&gt;&lt;p&gt;
+Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
+<wire x1="-0.3" y1="0.8" x2="0.3" y2="0.8" width="0.1016" layer="51" curve="170.055574"/>
+<wire x1="-0.275" y1="-0.825" x2="0.275" y2="-0.825" width="0.0508" layer="51" curve="-180"/>
+<wire x1="-0.4" y1="0.375" x2="-0.4" y2="-0.35" width="0.1016" layer="51"/>
+<wire x1="0.4" y1="0.35" x2="0.4" y2="-0.35" width="0.1016" layer="51"/>
+<circle x="-0.35" y="0.625" radius="0.075" width="0.0508" layer="51"/>
+<smd name="C" x="0" y="0.75" dx="0.8" dy="0.8" layer="1"/>
+<smd name="A" x="0" y="-0.75" dx="0.8" dy="0.8" layer="1"/>
+<text x="-1.905" y="-1.27" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="3.175" y="-1.27" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<rectangle x1="-0.45" y1="0.7" x2="-0.25" y2="0.85" layer="51"/>
+<rectangle x1="-0.275" y1="0.55" x2="-0.225" y2="0.6" layer="51"/>
+<rectangle x1="-0.45" y1="0.35" x2="-0.4" y2="0.725" layer="51"/>
+<rectangle x1="0.25" y1="0.55" x2="0.45" y2="0.85" layer="51"/>
+<rectangle x1="-0.45" y1="0.35" x2="0.45" y2="0.575" layer="51"/>
+<rectangle x1="-0.45" y1="-0.85" x2="-0.25" y2="-0.35" layer="51"/>
+<rectangle x1="0.25" y1="-0.85" x2="0.45" y2="-0.35" layer="51"/>
+<rectangle x1="-0.275" y1="-0.575" x2="0.275" y2="-0.35" layer="51"/>
+<rectangle x1="-0.275" y1="-0.65" x2="-0.175" y2="-0.55" layer="51"/>
+<rectangle x1="0.175" y1="-0.65" x2="0.275" y2="-0.55" layer="51"/>
+<polygon width="0.127" layer="29">
+<vertex x="-0.4318" y="0.254"/>
+<vertex x="0.4318" y="0.254"/>
+<vertex x="0.4318" y="-0.254"/>
+<vertex x="-0.4318" y="-0.254"/>
+</polygon>
+<rectangle x1="-0.762" y1="0.254" x2="-0.508" y2="0.508" layer="21"/>
+<rectangle x1="-0.3175" y1="-0.635" x2="0.3175" y2="-0.3175" layer="30"/>
+<rectangle x1="0.635" y1="-0.635" x2="1.5875" y2="-0.3175" layer="30"/>
+<rectangle x1="0.9525" y1="-0.9652" x2="1.27" y2="-0.6223" layer="30"/>
+<rectangle x1="-1.5875" y1="-0.635" x2="-0.635" y2="-0.3175" layer="30"/>
+<rectangle x1="-1.27" y1="-0.9652" x2="-0.9525" y2="-0.6223" layer="30"/>
+<rectangle x1="-0.79375" y1="0" x2="-0.15875" y2="0.3175" layer="30"/>
+<rectangle x1="0.15875" y1="0" x2="0.79375" y2="0.3175" layer="30"/>
+<rectangle x1="1.11125" y1="0" x2="1.74625" y2="0.3175" layer="30"/>
+<rectangle x1="-1.74625" y1="0" x2="-1.11125" y2="0.3175" layer="30"/>
+<rectangle x1="-1.5875" y1="0.3048" x2="1.5875" y2="0.6477" layer="30"/>
+<rectangle x1="-0.9525" y1="0.635" x2="0.9525" y2="0.9525" layer="30"/>
+<rectangle x1="-1.905" y1="-0.3302" x2="1.905" y2="0.0127" layer="30"/>
+<rectangle x1="-0.9525" y1="0.635" x2="0.9525" y2="0.9525" layer="42"/>
+<rectangle x1="-1.5875" y1="0.3175" x2="1.5875" y2="0.635" layer="42"/>
+<rectangle x1="-1.74625" y1="0" x2="-1.11125" y2="0.3175" layer="42"/>
+<rectangle x1="-0.79375" y1="0" x2="-0.15875" y2="0.3175" layer="42"/>
+<rectangle x1="0.15875" y1="0" x2="0.79375" y2="0.3175" layer="42"/>
+<rectangle x1="1.11125" y1="0" x2="1.74625" y2="0.3175" layer="42"/>
+<rectangle x1="-1.905" y1="-0.3175" x2="1.905" y2="0" layer="42"/>
+<rectangle x1="0.635" y1="-0.635" x2="1.5875" y2="-0.3175" layer="42"/>
+<rectangle x1="0.9525" y1="-0.9525" x2="1.27" y2="-0.635" layer="42"/>
+<rectangle x1="-0.3175" y1="-0.635" x2="0.3175" y2="-0.3175" layer="42"/>
+<rectangle x1="-1.5875" y1="-0.635" x2="-0.635" y2="-0.3175" layer="42"/>
+<rectangle x1="-1.27" y1="-0.9525" x2="-0.9525" y2="-0.635" layer="42"/>
+</package>
+<package name="CHIPLED_0603_TANK">
+<description>&lt;b&gt;CHIPLED&lt;/b&gt;&lt;p&gt;
+Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
+<wire x1="-0.3" y1="0.8" x2="0.3" y2="0.8" width="0.1016" layer="51" curve="170.055574"/>
+<wire x1="-0.275" y1="-0.825" x2="0.275" y2="-0.825" width="0.0508" layer="51" curve="-180"/>
+<wire x1="-0.4" y1="0.375" x2="-0.4" y2="-0.35" width="0.1016" layer="51"/>
+<wire x1="0.4" y1="0.35" x2="0.4" y2="-0.35" width="0.1016" layer="51"/>
+<circle x="-0.35" y="0.625" radius="0.075" width="0.0508" layer="51"/>
+<smd name="C" x="0" y="0.75" dx="0.8" dy="0.8" layer="1"/>
+<smd name="A" x="0" y="-0.75" dx="0.8" dy="0.8" layer="1"/>
+<text x="-1.905" y="-1.27" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="3.175" y="-1.27" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<rectangle x1="-0.45" y1="0.7" x2="-0.25" y2="0.85" layer="51"/>
+<rectangle x1="-0.275" y1="0.55" x2="-0.225" y2="0.6" layer="51"/>
+<rectangle x1="-0.45" y1="0.35" x2="-0.4" y2="0.725" layer="51"/>
+<rectangle x1="0.25" y1="0.55" x2="0.45" y2="0.85" layer="51"/>
+<rectangle x1="-0.45" y1="0.35" x2="0.45" y2="0.575" layer="51"/>
+<rectangle x1="-0.45" y1="-0.85" x2="-0.25" y2="-0.35" layer="51"/>
+<rectangle x1="0.25" y1="-0.85" x2="0.45" y2="-0.35" layer="51"/>
+<rectangle x1="-0.275" y1="-0.575" x2="0.275" y2="-0.35" layer="51"/>
+<rectangle x1="-0.275" y1="-0.65" x2="-0.175" y2="-0.55" layer="51"/>
+<rectangle x1="0.175" y1="-0.65" x2="0.275" y2="-0.55" layer="51"/>
+<polygon width="0.127" layer="29">
+<vertex x="-0.4318" y="0.254"/>
+<vertex x="0.4318" y="0.254"/>
+<vertex x="0.4318" y="-0.254"/>
+<vertex x="-0.4318" y="-0.254"/>
+</polygon>
+<rectangle x1="-0.762" y1="0.254" x2="-0.508" y2="0.508" layer="21"/>
+<rectangle x1="-1.5875" y1="-1.27" x2="1.5875" y2="-0.3175" layer="30"/>
+<rectangle x1="-1.27" y1="-0.3302" x2="1.27" y2="0.0127" layer="30"/>
+<rectangle x1="-0.47625" y1="0" x2="0.47625" y2="0.635" layer="30"/>
+<rectangle x1="-0.15875" y1="0.6223" x2="0.15875" y2="0.9652" layer="30"/>
+<rectangle x1="-1.5875" y1="-1.27" x2="1.5875" y2="-0.3175" layer="42"/>
+<rectangle x1="-1.27" y1="-0.3175" x2="1.27" y2="0" layer="42"/>
+<rectangle x1="-0.47625" y1="0" x2="0.47625" y2="0.635" layer="42"/>
+<rectangle x1="-0.15875" y1="0.635" x2="0.15875" y2="0.9525" layer="42"/>
+</package>
+<package name="CHIPLED_0603_SHIELD">
+<description>&lt;b&gt;CHIPLED&lt;/b&gt;&lt;p&gt;
+Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
+<wire x1="-0.3" y1="0.8" x2="0.3" y2="0.8" width="0.1016" layer="51" curve="170.055574"/>
+<wire x1="-0.275" y1="-0.825" x2="0.275" y2="-0.825" width="0.0508" layer="51" curve="-180"/>
+<wire x1="-0.4" y1="0.375" x2="-0.4" y2="-0.35" width="0.1016" layer="51"/>
+<wire x1="0.4" y1="0.35" x2="0.4" y2="-0.35" width="0.1016" layer="51"/>
+<circle x="-0.35" y="0.625" radius="0.075" width="0.0508" layer="51"/>
+<smd name="C" x="0" y="0.75" dx="0.8" dy="0.8" layer="1"/>
+<smd name="A" x="0" y="-0.75" dx="0.8" dy="0.8" layer="1"/>
+<text x="-1.905" y="-1.27" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="3.175" y="-1.27" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<rectangle x1="-0.45" y1="0.7" x2="-0.25" y2="0.85" layer="51"/>
+<rectangle x1="-0.275" y1="0.55" x2="-0.225" y2="0.6" layer="51"/>
+<rectangle x1="-0.45" y1="0.35" x2="-0.4" y2="0.725" layer="51"/>
+<rectangle x1="0.25" y1="0.55" x2="0.45" y2="0.85" layer="51"/>
+<rectangle x1="-0.45" y1="0.35" x2="0.45" y2="0.575" layer="51"/>
+<rectangle x1="-0.45" y1="-0.85" x2="-0.25" y2="-0.35" layer="51"/>
+<rectangle x1="0.25" y1="-0.85" x2="0.45" y2="-0.35" layer="51"/>
+<rectangle x1="-0.275" y1="-0.575" x2="0.275" y2="-0.35" layer="51"/>
+<rectangle x1="-0.275" y1="-0.65" x2="-0.175" y2="-0.55" layer="51"/>
+<rectangle x1="0.175" y1="-0.65" x2="0.275" y2="-0.55" layer="51"/>
+<polygon width="0.127" layer="29">
+<vertex x="-0.4318" y="0.254"/>
+<vertex x="0.4318" y="0.254"/>
+<vertex x="0.4318" y="-0.254"/>
+<vertex x="-0.4318" y="-0.254"/>
+</polygon>
+<rectangle x1="-0.762" y1="0.254" x2="-0.508" y2="0.508" layer="21"/>
+<rectangle x1="-0.9525" y1="0.3175" x2="0.9525" y2="0.635" layer="30"/>
+<rectangle x1="-1.905" y1="-0.9525" x2="-1.27" y2="-0.635" layer="30"/>
+<rectangle x1="1.27" y1="-0.9525" x2="1.905" y2="-0.635" layer="30"/>
+<rectangle x1="-1.74625" y1="-0.3175" x2="1.74625" y2="0" layer="30"/>
+<rectangle x1="-1.42875" y1="-0.0127" x2="1.42875" y2="0.3302" layer="30"/>
+<rectangle x1="-1.905" y1="-0.6477" x2="-0.9525" y2="-0.3048" layer="30"/>
+<rectangle x1="0.9525" y1="-0.6477" x2="1.905" y2="-0.3048" layer="30"/>
+<rectangle x1="-1.905" y1="-0.9525" x2="-1.27" y2="-0.635" layer="42"/>
+<rectangle x1="-1.905" y1="-0.635" x2="-0.9525" y2="-0.3175" layer="42"/>
+<rectangle x1="-1.74625" y1="-0.3175" x2="1.74625" y2="0" layer="42"/>
+<rectangle x1="0.9525" y1="-0.635" x2="1.905" y2="-0.3175" layer="42"/>
+<rectangle x1="1.27" y1="-0.9525" x2="1.905" y2="-0.635" layer="42"/>
+<rectangle x1="-1.42875" y1="0" x2="1.42875" y2="0.3175" layer="42"/>
+<rectangle x1="-0.9525" y1="0.3175" x2="0.9525" y2="0.635" layer="42"/>
+</package>
 </packages>
 <symbols>
 <symbol name="LED">
@@ -11046,6 +11577,87 @@ Source: www.kingbright.com</description>
 </technologies>
 </device>
 <device name="0402" package="0402">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="ALIEN_A_1" package="CHIPLED_0603_ALIEN_A_1">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="ALIEN_A_2" package="CHIPLED_0603_ALIEN_A_2">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="ALIEN_B_2" package="CHIPLED_0603_ALIEN_B_2">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="ALIEN_B_1" package="CHIPLED_0603_ALIEN_B_1">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="ALIEN_C_1" package="CHIPLED_0603_ALIEN_C_1">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="ALIEN_C_2" package="CHIPLED_0603_ALIEN_C_2">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="UFO" package="CHIPLED_0603_UFO">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="TANK" package="CHIPLED_0603_TANK">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SHIELD" package="CHIPLED_0603_SHIELD">
 <connects>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
@@ -12874,7 +13486,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="GND35" gate="1" x="-109.22" y="76.2" rot="R270"/>
 <instance part="C12" gate="G$1" x="-78.74" y="68.58"/>
 <instance part="GND36" gate="1" x="-78.74" y="58.42"/>
-<instance part="SAO1" gate="G$1" x="0" y="134.62"/>
+<instance part="SAO1" gate="G$1" x="-5.08" y="134.62"/>
 <instance part="SAO2" gate="G$1" x="30.48" y="134.62"/>
 </instances>
 <busses>
@@ -12910,9 +13522,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="-10.16" y1="53.34" x2="-10.16" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="7.62" y1="127" x2="10.16" y2="127" width="0.1524" layer="91"/>
 <pinref part="GND7" gate="1" pin="GND"/>
 <pinref part="SAO1" gate="G$1" pin="GND"/>
+<wire x1="2.54" y1="127" x2="10.16" y2="127" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND8" gate="1" pin="GND"/>
@@ -13109,9 +13721,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </net>
 <net name="SCL_AVR_SCK" class="0">
 <segment>
-<wire x1="7.62" y1="134.62" x2="10.16" y2="134.62" width="0.1524" layer="91"/>
 <label x="10.16" y="134.62" size="1.016" layer="95" xref="yes"/>
 <pinref part="SAO1" gate="G$1" pin="SCL"/>
+<wire x1="2.54" y1="134.62" x2="10.16" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="38.1" y1="134.62" x2="40.64" y2="134.62" width="0.1524" layer="91"/>
@@ -13151,9 +13763,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </net>
 <net name="VCC" class="0">
 <segment>
-<wire x1="7.62" y1="129.54" x2="15.24" y2="129.54" width="0.1524" layer="91"/>
 <pinref part="P+1" gate="VCC" pin="VCC"/>
 <pinref part="SAO1" gate="G$1" pin="VCC"/>
+<wire x1="2.54" y1="129.54" x2="15.24" y2="129.54" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="38.1" y1="129.54" x2="45.72" y2="129.54" width="0.1524" layer="91"/>
@@ -13835,9 +14447,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="147.32" y="127" size="1.016" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="7.62" y1="132.08" x2="10.16" y2="132.08" width="0.1524" layer="91"/>
 <label x="10.16" y="132.08" size="1.016" layer="95" xref="yes"/>
 <pinref part="SAO1" gate="G$1" pin="SDA"/>
+<wire x1="2.54" y1="132.08" x2="10.16" y2="132.08" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="38.1" y1="132.08" x2="40.64" y2="132.08" width="0.1524" layer="91"/>

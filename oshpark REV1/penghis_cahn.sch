@@ -13344,6 +13344,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND36" library="supply1" deviceset="GND" device=""/>
 <part name="SAO1" library="SparkFun-Connectors" deviceset="SAO-SHITTY-ADDON" device="MASTER"/>
 <part name="SAO2" library="SparkFun-Connectors" deviceset="SAO-SHITTY-ADDON" device="MASTER"/>
+<part name="R19" library="rcl" deviceset="R-EU_" device="R0603" value="300R"/>
+<part name="R20" library="rcl" deviceset="R-EU_" device="R0603" value="300R"/>
 </parts>
 <sheets>
 <sheet>
@@ -13488,6 +13490,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="GND36" gate="1" x="-78.74" y="58.42"/>
 <instance part="SAO1" gate="G$1" x="-5.08" y="134.62"/>
 <instance part="SAO2" gate="G$1" x="30.48" y="134.62"/>
+<instance part="R19" gate="G$1" x="12.7" y="147.32" rot="R90"/>
+<instance part="R20" gate="G$1" x="48.26" y="147.32" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -14188,6 +14192,16 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="-10.16" y1="40.64" x2="-7.62" y2="40.64" width="0.1524" layer="91"/>
 <label x="-7.62" y="40.64" size="1.016" layer="95" xref="yes"/>
 </segment>
+<segment>
+<pinref part="R19" gate="G$1" pin="2"/>
+<wire x1="12.7" y1="152.4" x2="12.7" y2="154.94" width="0.1524" layer="91"/>
+<label x="12.7" y="154.94" size="1.016" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="R20" gate="G$1" pin="2"/>
+<wire x1="48.26" y1="154.94" x2="48.26" y2="152.4" width="0.1524" layer="91"/>
+<label x="48.26" y="154.94" size="1.016" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="NEO_IN" class="0">
 <segment>
@@ -14541,6 +14555,22 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="C10" gate="G$1" pin="1"/>
 <wire x1="-81.28" y1="12.7" x2="-81.28" y2="15.24" width="0.1524" layer="91"/>
 <label x="-81.28" y="15.24" size="1.016" layer="95" rot="R90" xref="yes"/>
+</segment>
+</net>
+<net name="N$9" class="0">
+<segment>
+<pinref part="SAO1" gate="G$1" pin="GPIO1"/>
+<pinref part="R19" gate="G$1" pin="1"/>
+<wire x1="2.54" y1="139.7" x2="12.7" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="139.7" x2="12.7" y2="142.24" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$17" class="0">
+<segment>
+<pinref part="SAO2" gate="G$1" pin="GPIO1"/>
+<pinref part="R20" gate="G$1" pin="1"/>
+<wire x1="38.1" y1="139.7" x2="48.26" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="139.7" x2="48.26" y2="142.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

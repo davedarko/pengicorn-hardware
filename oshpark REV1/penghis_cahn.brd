@@ -5038,10 +5038,11 @@
 <text x="95.504" y="48.768" size="0.8128" layer="25" ratio="12" rot="R90">VIN</text>
 <text x="95.504" y="45.72" size="0.8128" layer="25" ratio="12" rot="R90">GND</text>
 <text x="95.504" y="51.308" size="0.8128" layer="25" ratio="12" rot="R90">DATA</text>
-<text x="30.48" y="25.4" size="1.4224" layer="25" ratio="12" rot="R315">@davedarko 2019
+<text x="30.734" y="23.876" size="1.4224" layer="25" ratio="12" rot="R315">@davedarko 2019
 35C3 36C3 pengicorn badge
-@deantonious, @spacehuhn,
-@f0wl, @geekc64os
+@deantonious @spacehuhn
+@f0wl @geekc64os
+@13r1ckz @PwnKitteh
 https://github.com/
   davedarko/pengicorn/
   deantonious/Penguicorn/</text>
@@ -7224,7 +7225,9 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="68.961" y="72.804" size="0.8128" layer="25" ratio="12"/>
 <attribute name="VALUE" x="65.626" y="72.517" size="0.8128" layer="25" ratio="12" rot="R90"/>
 </element>
-<element name="S_DN" library="SparkFun-Electromechanical" package="TACTILE-SWITCH-1101NE" value="SWITCH-MOMENTARY-2-SMD-1101NE" x="53.34" y="7.62" rot="MR315"/>
+<element name="S_DN" library="SparkFun-Electromechanical" package="TACTILE-SWITCH-1101NE" value="SWITCH-MOMENTARY-2-SMD-1101NE" x="53.34" y="7.62" smashed="yes" rot="MR315">
+<attribute name="NAME" x="54.047109375" y="11.15553125" size="0.762" layer="26" rot="MR315"/>
+</element>
 <element name="U$6" library="CC1101" package="CC1101" value="CC1101" x="85.210825" y="59.757509375" rot="R292.5"/>
 <element name="GDO0" library="testpad" package="B1,27" value="TPB1,27" x="74.168" y="49.69" smashed="yes">
 <attribute name="TP_SIGNAL_NAME" value="" x="73.533" y="47.785" size="1" layer="37"/>
@@ -7267,7 +7270,9 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="91.186" y="51.054" size="0.8128" layer="25" ratio="12"/>
 <attribute name="VALUE" x="90.17" y="50.8" size="0.8128" layer="25" ratio="12" rot="R270"/>
 </element>
-<element name="S_RT" library="SparkFun-Electromechanical" package="TACTILE-SWITCH-1101NE" value="SWITCH-MOMENTARY-2-SMD-1101NE" x="53.34" y="15.24" rot="MR315"/>
+<element name="S_RT" library="SparkFun-Electromechanical" package="TACTILE-SWITCH-1101NE" value="SWITCH-MOMENTARY-2-SMD-1101NE" x="53.34" y="15.24" smashed="yes" rot="MR315">
+<attribute name="NAME" x="54.047109375" y="18.77553125" size="0.762" layer="26" rot="MR315"/>
+</element>
 <element name="IC1" library="micro-philips" package="SO16W" value="PCF8574T" x="30.703184375" y="42.089603125" smashed="yes" rot="R225">
 <attribute name="MPN" value="PCF8574T/3,512" x="30.703184375" y="42.089603125" size="1.778" layer="27" rot="R225" display="off"/>
 <attribute name="MF" value="" x="30.703184375" y="42.089603125" size="1.778" layer="27" rot="R225" display="off"/>
@@ -7275,10 +7280,18 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="OC_NEWARK" value="70R6870" x="30.703184375" y="42.089603125" size="1.778" layer="27" rot="R225" display="off"/>
 <attribute name="NAME" x="32.050221875" y="48.6451875" size="0.8128" layer="25" rot="R315"/>
 </element>
-<element name="S_UP" library="SparkFun-Electromechanical" package="TACTILE-SWITCH-1101NE" value="SWITCH-MOMENTARY-2-SMD-1101NE" x="60.96" y="15.24" rot="MR315"/>
-<element name="S_LT" library="SparkFun-Electromechanical" package="TACTILE-SWITCH-1101NE" value="SWITCH-MOMENTARY-2-SMD-1101NE" x="60.96" y="7.62" rot="MR315"/>
-<element name="S_B" library="SparkFun-Electromechanical" package="TACTILE-SWITCH-1101NE" value="SWITCH-MOMENTARY-2-SMD-1101NE" x="19.05" y="42.015209375" rot="MR315"/>
-<element name="S_A" library="SparkFun-Electromechanical" package="TACTILE-SWITCH-1101NE" value="SWITCH-MOMENTARY-2-SMD-1101NE" x="19.05" y="49.53" rot="MR315"/>
+<element name="S_UP" library="SparkFun-Electromechanical" package="TACTILE-SWITCH-1101NE" value="SWITCH-MOMENTARY-2-SMD-1101NE" x="60.96" y="15.24" smashed="yes" rot="MR315">
+<attribute name="NAME" x="61.667109375" y="18.77553125" size="0.762" layer="26" rot="MR315"/>
+</element>
+<element name="S_LT" library="SparkFun-Electromechanical" package="TACTILE-SWITCH-1101NE" value="SWITCH-MOMENTARY-2-SMD-1101NE" x="60.96" y="7.62" smashed="yes" rot="MR315">
+<attribute name="NAME" x="61.667109375" y="11.15553125" size="0.762" layer="26" rot="MR315"/>
+</element>
+<element name="S_B" library="SparkFun-Electromechanical" package="TACTILE-SWITCH-1101NE" value="SWITCH-MOMENTARY-2-SMD-1101NE" x="19.05" y="42.015209375" smashed="yes" rot="MR315">
+<attribute name="NAME" x="19.757109375" y="45.550740625" size="0.762" layer="26" rot="MR315"/>
+</element>
+<element name="S_A" library="SparkFun-Electromechanical" package="TACTILE-SWITCH-1101NE" value="SWITCH-MOMENTARY-2-SMD-1101NE" x="19.05" y="49.53" smashed="yes" rot="MR315">
+<attribute name="NAME" x="19.757109375" y="53.06553125" size="0.762" layer="26" rot="MR315"/>
+</element>
 <element name="U$9" library="LOGOS" package="DAVEDARKO_GOLD" value="DAVEDARKODDGOLD" x="29.718" y="30.226"/>
 <element name="P1" library="testpad" package="B1,27" value="TPB1,27" x="22.86" y="48.26" smashed="yes">
 <attribute name="TP_SIGNAL_NAME" value="" x="22.225" y="46.355" size="1" layer="37"/>
